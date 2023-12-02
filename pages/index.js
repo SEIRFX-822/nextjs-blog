@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() { // exporting the function Home
   return (
@@ -19,15 +20,15 @@ export default function Home() { // exporting the function Home
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <Link href="/posts/first-post" className={styles.card}>
             <h3>First Blog &rarr;</h3>
             <p>Learn about my engineering journey</p>
-          </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <Link href="/posts/second-post" className={styles.card}>
             <h3>Second Blog &rarr;</h3>
             <p>Learn about React</p>
-          </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
