@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from '../../styles/SecondPost.module.css';
+import Avatar from '../avatar';
 
 // data
 const reactArray = [
@@ -21,6 +22,7 @@ export default function SecondPost() {
     return (
         <div className={styles.container}>
             <h1>Second Post</h1>
+            <Avatar />
             <p>React is a frontend framework that allows us to make components and more...</p>
 
             <div className={styles.grid}>

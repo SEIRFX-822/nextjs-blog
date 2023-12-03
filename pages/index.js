@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() { // exporting the function Home
   return (
@@ -14,6 +15,8 @@ export default function Home() { // exporting the function Home
         <h1 className={styles.title}>
           Welcome to my blog!
         </h1>
+
+        <Image src='/engineer.png' alt='engineer' width='200' height='200'/>
 
         <p className={styles.description}>
           Get started by reading the blog.

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Avatar from '../avatar';
 
 // data
 const array = [
@@ -19,6 +20,7 @@ export default function FirstPost() {
     return (
         <div>
             <h1>First Post</h1>
+            <Avatar />
             <p>My engineering journey began with learning HTML, CSS, JavaScript, and more.</p>
             <p>I learned {array[6]} for server-side rendering</p>
             <div>
